@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Map function</title>
+  </head>
+  <body>
+    <script>
+      /* map function does not mutate original array
+          -map function gives return value as a result.
+          ---***----
+          Difference between map and forEach function
+          -main differnce between forEach and map function is return   value. in forEach method return value is undefined and in map method return value is a new array with transformed elements.
+          -the second difference is ability to chain other method means in map method you can attach filter() ,reduce(),sort() and so on method on an array and in forEach method you can not attach other method like filter(),sort(),reduce() and so on method on an array.
+          */
+
+      let prizeEur = [200, 450, -400, 3000, -650, -130, 70, 1300];
+      let prizeEurToUsd = 1.1;
+      /*
+      let prizeUsd = prizeEur.map((x) => Math.round(x * prizeEurToUsd));
+      console.log(prizeEur, prizeUsd); */
+
+      /* arr.map((x, i) => {
+        console.log(
+          `${Math.abs(x)} is ${x > 0 ? "Positive" : "Negative"} Number `
+        );
+      });
+      console.log(arr);
+         console.log(arr1);
+      */
+      let prizeUsd = [];
+
+      for (let win of prizeEur) {
+        prizeUsd.push(Math.round(win * prizeEurToUsd));
+      }
+      console.log(prizeUsd);
+
+      var x = 1;
+      var fun = function () {
+        console.log(x);
+        var x = 4;
+      };
+    </script>
+  </body>
+</html>

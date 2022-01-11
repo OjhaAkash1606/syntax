@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Object Methods</title>
+  </head>
+  <body>
+    <script>
+      /* object literals for creating objects
+
+      let car = {
+          Name: "Alto 800",
+          Modal: 2016,
+          Owner: "Akash",
+          condition: function speed() {
+              console.log("Running condition");
+            },
+            TopSpeed: "110 km/h",
+        };
+        console.log(car.condition());
+        console.log(car.Name);
+        */
+
+      /* create objects with object constructor function
+       -First later of Function name must be in upper case.
+
+      function GeneralCar(GivenName, GivenHighSpeed, GivenOwnerName) {
+          this.Name = GivenName;
+          this.HighSpeed = GivenHighSpeed;
+          this.OwnerName = GivenOwnerName;
+          this.AnalyseSpeed = function () {
+              console.log(
+                  `${this.Name}'s speed is ${
+                      200 - this.HighSpeed
+                    } km/h slower from 200 km/h and it's current speed is ${
+                        this.HighSpeed
+                    }km/h.`
+                    );
+                };
+            }
+            car = new GeneralCar("Maruti", 120, "Akash");
+            car2 = new GeneralCar("Honda", 250, "Rishi");
+            console.log(car, car2);
+            */
+    </script>
+  </body>
+</html>

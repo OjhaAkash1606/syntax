@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>findIndex method</title>
+  </head>
+  <body>
+    <script>
+      /* The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test. */
+      let arr = [26, 25, 29, 36, 35];
+
+      let arr1 = arr.findIndex((ele, ind) => {
+        console.log(ind);
+        return ele > 26;
+      });
+      console.log(arr1);
+    </script>
+  </body>
+</html>

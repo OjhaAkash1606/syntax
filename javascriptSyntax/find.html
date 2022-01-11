@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Find method</title>
+  </head>
+  <body>
+    <img src="../reactSyntax/src/Images/anjana.jpg" alt="Logo">
+    <script>
+      /* The find() method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned. */
+      let arr = [25, 5, 10, 69, 36, 87, 36, 54, 3];
+      let arr2 = arr.find((ele, ind, arr) => {
+        console.log(ele > 69);
+        console.log(ind, ele);
+        return ele > 69;
+      });
+      console.log(arr2);
+    </script>
+  </body>
+</html>

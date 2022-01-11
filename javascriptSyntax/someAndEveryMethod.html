@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Some and every methods</title>
+  </head>
+  <body>
+    <script>
+      /*
+        ------some methods------
+            -The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+            -The some() method executes the callbackFn function once for each element present in the array until it finds the one where callbackFn returns a truthy value (a value that becomes true when converted to a Boolean). If such an element is found, some() immediately returns true. Otherwise, some() returns false. callbackFn is invoked only for indexes of the array with assigned values. It is not invoked for indexes which have been deleted or which have never been assigned values.
+
+            // for true
+            let arr = [25, 36, 65, 98, 35, 64];
+            let arr1 = arr.some((val) => {
+                return val > 36;
+            });
+            console.log(arr1);
+
+            // for false
+            let arr = [25, 36, 65, 98, 35, 64];
+            let arr1 = arr.some((val) => {
+                return val > 100;
+            });
+            console.log(arr1);
+
+
+            ------some methods------
+            --The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+
+            --The every() method tests all elements in the array and all element passes the test implemented by the provided function. It returns false if, in the array, it finds an element for which the provided function returns false; otherwise it returns true.
+
+            --The every method executes the provided callbackFn function once for each element present in the array until it finds the one where callbackFn returns a falsy value. If such an element is found, the every method immediately returns false. Otherwise, if callbackFn returns a truthy value for all elements, every returns true.
+            // return false
+            let arr = [25, 36, 65, 98, 35, 64];
+            let arr1 = arr.every((val) => val > 25);
+            console.log(arr1);
+            
+            //   return true
+            let arr = [25, 36, 65, 98, 35, 64];
+            let arr1 = arr.every((val) => val > 24);
+            console.log(arr1);
+            */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>filter methods</title>
+    <script>
+      /*
+            The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+            -Return value
+              A new array with the elements that pass the test. If no elements pass the test, an empty array will be returned.
+
+
+
+           Remove dulicate element in an array using filter method
+
+      let arr = [2, 5, 8, 9, 25, 36, 54, 58, 66];
+       let arr1 = [26, 82, 65, 66, 25, 8, 6];
+
+       let arr2 = arr.concat(arr1);
+       console.log(arr2);
+       let arr3 = arr2.filter((x, y, z) => {
+         return z.indexOf(x) === y;
+       });
+       console.log(arr3); */
+      let a = [1, 2, 3, 4, 8, 5, 6];
+      console.log();
+      let b = [4, 5, 6, 7, 1, 8];
+      let c = [4, 5, 6, 9, 2, 10];
+      let d = [4, 5, 6, 11, 12, 7, 3];
+      // console.log(merge);
+      /* let removeDuplicate = new Set(merge);
+      console.log(removeDuplicate); */
+      /* let merge = a.concat(b, c, d);
+      let notContained = [];
+      let find = merge.filter((ele, ind) =>
+        merge.indexOf(ele) === merge.lastIndexOf(ele)
+          ? notContained.push(ele)
+          : ""
+      );
+      console.log(notContained); */
+
+      /*  let ab = a.concat(b);
+      console.log(ab);
+      let ba = b.concat(a);
+      // console.log(ba);
+      let abfilter = ab
+        .filter((ele, ind) => ab.indexOf(ele) === ind)
+        .filter((val, i) => ab.lastIndexOf(val) === i);
+      console.log(abfilter); */
+      let e = a.concat(b, c, d);
+
+      let g = e.filter((ele) => {
+        if (
+          (a.includes(ele) && b.includes(ele)) ||
+          (b.includes(ele) && c.includes(ele)) ||
+          (c.includes(ele) && d.includes(ele)) ||
+          (d.includes(ele) && a.includes(ele)) ||
+          (a.includes(ele) && c.includes(ele)) ||
+          (b.includes(ele) && d.includes(ele))
+        ) {
+        } else {
+          return ele;
+        }
+      });
+      console.log(g);
+
+      let name = ["akash", "anil", "pankaj", "rishi"];
+      let name2 = ["sunil", "prakash", "anil", "chintu"];
+      let name3 = ["pintu", "sunil", "vivek", "rahul"];
+      let name4 = ["pavan", "pankaj", "chintu", "murli"];
+
+      let concat = name.concat(name2, name3, name4);
+      console.log(concat);
+      concat = concat.filter((val, ite) =>
+        concat.indexOf(val) === concat.lastIndexOf(val) ? concat.push(val) : ""
+      );
+      console.log(concat);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Destructuring Assignment</title>
+    <script>
+      /* The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+            //element of array is defined as a variable sepratelly
+            let arr = ["Akash", "Rahul", "Chintu", ["Ramesh", "Dinesh"]];
+
+            let game = ([
+                name1,
+                name2,
+                name3,
+                [name4, name5],
+                name6,
+                name7 = "Gabru",
+              ] = arr);
+              console.log(name1);
+              console.log(name2);
+              console.log(name3);
+              console.log(name4);
+              console.log(name5);
+
+              //undefined value when value not available in array or blank
+              console.log(name6);
+
+              //we can set default value in defined variable
+              console.log(name7);
+
+              //we can also uses  rest operator here
+              let arr1 = ["pankaj", "chintu", "Dipak", "Divakar", "Puran"];
+              let game1 = ([user, ...rest] = arr1);
+              console.log(user);
+              console.log(rest);
+
+              //spread operators
+              console.log(...rest);
+
+              //pass variable value in function
+
+              function user([name, age, designation, salary]) {
+                console.log(name, age, designation, salary);
+              }
+
+              user(["Akash", 27, "developer", 25000]);
+
+              // pass variable value through function
+
+              function user1() {
+                return ["Chintu", "Dinesh", "Pankaj", "Ramesh"];
+              }
+              let [name1, name2, name3, name4] = user1();
+              console.log(name1, name2, name3, name4);
+              */
+
+      // ---------****Object destructuring****----------
+
+      /*  Basic assignment
+                -Assignment declaration like let var const */
+      let user = { name: "Akash", age: 27, salary: 25000, desi: "Developer" };
+
+      let { name, age, salary, desi } = user;
+      console.log(name, age, salary, desi);
+
+      /* Assignment without declaration
+              -The parentheses ( ... ) around the assignment statement are required when using object literal destructuring assignment without a declaration.
+              let a,b,c;
+              ({ a, b, c } = { a: 10, b: 20, c: 30 });
+              console.log(a);
+              */
+
+      // Unpacking fields from objects passed as a function parameter
+
+      let user1 = {
+        name: "akash",
+        age: 27,
+        salary: 25000,
+        other: {
+          name1: "pankaj",
+          age1: 30,
+          salary1: 30000,
+        },
+      };
+
+      let fun2 = function fun1({ name, age, other: { age1, name1 } }) {
+        console.log(name1, name, age1, age);
+      };
+      fun2(user1);
+    </script>
+  </head>
+  <body></body>
+</html>

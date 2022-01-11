@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>forEach Methods</title>
+  </head>
+  <body>
+    <script>
+      /* The forEach method calls a function once for each element of  array
+          -forEach method does not mutate original array.
+          -in forEach method return value is always undifined.
+        
+        Difference between map and forEach function
+          -main differnce between forEach and map function is return   value. in forEach method return value is undefined and in map method return value is a new array with transformed elements.
+          -the second difference is ability to chain other method means in map method you can attach filter() ,reduce(),sort() and so on method on an array and in forEach method you can not attach other method like filter(),sort(),reduce() and so on method on an array.
+        */
+      let statement = [5000, 4000, -3000, -5000, 2000, -4000];
+      /* for (i = 0; i < statement.length; i++) {
+             statement[i] > 0
+               ? console.log(`${statement[i]}Rs. deposited in your account`)
+               : console.log(
+                   `${Math.abs(statement[i])}Rs. withdraw in your account`
+                 );
+           }
+      */
+      /* statement.forEach(function (element, ind, arr) {
+             console.log(ind);
+             console.log(arr);
+             element > 0
+               ? console.log(`${element} deposited in your account`)
+               : console.log(`${Math.abs(element)} withdraw from your account.`);
+           }); */
+
+      let arr = [5, 15, 25, 35, 45, 55, 65, 75, 85, 95];
+
+      arr.forEach(function (x) {
+        console.log(x * 10);
+      });
+      console.log(arr);
+    </script>
+  </body>
+</html>

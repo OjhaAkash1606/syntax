@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rest Operator</title>
+  </head>
+  <body>
+    <script>
+      /*
+       The rest parameter must be the last parameter in the function definition.
+       -Rest parameters were introduced to reduce the boilerplate code that was commonly used for converting a set of arguments to an array
+       -The rest parameter (...) allows a function to treat an indefinite number of arguments as an array 
+       */
+      function sum(name, ...para) {
+        let balance = 0;
+        for (let i in para) {
+          balance = balance + para[i];
+          // console.log(balance);
+        }
+        console.log(`${name} your total is ${balance}`);
+        console.log(balance);
+      }
+      sum("Akash", 10, 20, 30, 40, 60, 58, 69, 33);
+    </script>
+  </body>
+</html>

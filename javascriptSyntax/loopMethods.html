@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loop Methods in javascript</title>
+  </head>
+  <body>
+    <script>
+      let arr = ["A", "B", "C", "D", "E", "F", "G", "H"];
+      /*
+            here we can get Value of element
+
+            for (let i of arr) {
+                console.log(i);
+              }
+              */
+
+      /* here we can get index number
+
+            for (let i in arr) {
+                console.log(i);
+              }
+              */
+
+      /*
+             here we can get complete array
+
+             for (let i in arr) {
+                 console.log(arr);
+              }
+              */
+
+      /*
+             here we can get object's key and it's value
+             -iterating an object using for-in-loop
+
+             let car = {
+                 name: "Akash",
+                 age: 29,
+                 cast: "öjha",
+              };
+              for (let i in car) {
+                  console.log(i, car[i], car);
+              }
+              */
+
+      /* we can iterating also string using for-in-loop
+
+            let char = "This is learn by my self";
+            for (let iter in char) {
+                console.log(char[iter]);
+              }
+              */
+      /*  we can iterating string using traditional method
+            
+      let char = "This is learn by my self";
+
+      for (let i = 0; i < char.length; i += 1) {
+        console.log(char[i]);
+      } */
+      for (let a = 1; a <= 20; a += 2) {
+        console.log(a);
+        for (let b = a; b < a + 5; b++) {
+          console.log(b);
+        }
+      }
+    </script>
+  </body>
+</html>

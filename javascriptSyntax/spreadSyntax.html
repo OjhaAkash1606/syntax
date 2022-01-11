@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Spread Syntax</title>
+  </head>
+  <body>
+    <script>
+      /* ----------*********-------------
+      we can uses spread operator as a concat array also object
+
+      //concat array
+      let arr1 = [56, 69, 58, 62, 84, 69, 23];
+      let arr2 = [36, 45, 56, 95, 69, 67];
+      let arr3 = [26, 6, 5, 8, 69, 58, 45, 45, 51, 51];
+      
+      let arr4 = arr1.concat(arr2, arr3);
+      console.log(arr4);
+      
+      let arr5 = [...arr1, ...arr2, ...arr3];
+      console.log(arr5);
+
+      //concat object
+      let obj1 = { name: "Äkash", agr: 27 };
+      let obj2 = { Course: "JavaScript", duration: "1 year" };
+      let obj3 = { ...obj1, ...obj2 };
+
+      console.log(obj3);
+      
+      */
+
+      /* ----------*********-------------
+     we can spread each element of array with the help of spread operators.
+     let arr2 = [36, 45, 56, 95, 69, 67];
+     
+     //we can pass array as a arguments in function
+     let arr1 = [56, 69, 58, 62, 84, 69, 23];
+     let eachElement = (name, ...args) => {
+         for (let i in args) {
+             console.log(i, args[i]);
+            }
+        };
+        
+        eachElement("Akash", arr1);
+        eachElement("Akash", ...arr1);
+        
+        
+        let  arr1 = [56, 69, 58, 62, 84, 69, 23];
+        console.log(arr1);
+        console.log(...arr1);
+        
+        //arr2 accepting pushing element in arr1
+        let arr1 = [56, 69, 58, 62, 84, 69, 23];
+        let arr2 = arr1;
+        arr1.push(56);
+        console.log(arr2);
+        
+        //arr2 not accepting pushing element in arr1
+        let arr3 = [56, 69, 58, 62, 84, 69, 23];
+        arr4 = [...arr3];
+        arr3.push(56);
+        console.log(arr4);
+        */
+    </script>
+  </body>
+</html>

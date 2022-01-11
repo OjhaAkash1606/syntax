@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <script>
+      let arr = ["A", "B", "c", "D", "E", "F"];
+      // console.log(arr);
+
+      /*      Push Method 
+          To add new value at last in array 
+          arr.push("G", "H");
+          console.log(arr);
+          */
+
+      /*      Pop Method 
+          To remove only one value from the array's last side 
+          arr.pop();
+          console.log(arr);
+          */
+
+      /*      unshift method
+          To add value at starting in array 
+      arr.unshift(1, 2);
+      console.log(arr);*/
+
+      /*      shift method
+          To remove only one value from the array's starting side 
+      arr.shift();
+      console.log(arr);*/
+
+      /*      slice method 
+              -sequense must be followed left to right
+              -slice method returns a shallow copy of a portion of an array into new array object.
+              slice method will not be mutate original array.
+              -slice method will not be modified original array just only create new array with shallow copy of portion of array.
+              
+              let arr1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+              console.log(arr1);
+              
+              let x = arr1.slice(2);
+              console.log(x);
+              
+              let y = arr1.slice(2, 4);
+              console.log(y);
+              
+              let z = arr1.slice(-1);
+              console.log(z);
+              
+              let a = arr1.slice(-(arr1.length - 1), -1);
+              console.log(a);
+              
+              let b = arr1.slice(2, -2);
+              console.log(b);
+              */
+
+      /*      splice method
+              arrayname.splice(start,deletcount element at starting point,add element(one or more than one))
+              -In splice method first parameter is indicating index at which to start changing the array and second is indicating the number of elements in the array to remove from start.
+              -splice method will be mutate original array and also add new element in original array which is optional
+              
+              let arr1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+              console.log(arr1);
+              
+              let a = arr1.splice(6);
+              console.log(a);
+              console.log(arr1);
+              
+              let b = arr1.splice(3, 1);
+              console.log(b);
+              console.log(arr1);
+              
+              let c = arr1.splice(-(arr1.length - 2), 2);
+              console.log(c);
+              */
+      /*      reverse method
+             -reverse method is manipulating all elements index of array like The first array element becomes the last, and the last array element becomes the first. 
+             -reverse method will be mutate original method.
+             
+             let arr1 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+             console.log(arr1);
+             arr1.reverse();
+             console.log(arr1);
+             */
+
+      /*      concat method
+            -arrayname.concat(array1,array2,array-n)
+            -The concat() method is used to merge two or more arrays. 
+            -This method does not mutate the existing arrays, but instead  returns a new array.
+            let arr1 = [10, 9, 8, 7, 6];
+            let arr4 = [5, 4, 3, 2, 1, 0];
+            let arr2 = ["A", "B", "C", "D", "E"];
+            let arr3 = ["F", "G", "H", "I"];
+            let newArr = arr1.concat(arr2);
+            console.log(newArr);
+            let newArr2 = arr1.concat(arr2, arr3, arr4);
+            console.log(newArr2);
+            console.log(arr1);
+            let newArr3 = [...arr1, ...arr2, ...arr3];
+            console.log(newArr3);
+            */
+
+      /*      join method
+           -In this method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string
+           -If the array has only one item, then that item will be returned without using the separator.
+           -in this method original array will be not mutate
+           let arr2 = ["A", "B", "C", "D", "E"];
+           let a = arr2.join("-");
+           console.log(arr2);
+           */
+    </script>
+  </body>
+</html>

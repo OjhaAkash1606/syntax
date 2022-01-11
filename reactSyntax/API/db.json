@@ -1,0 +1,43 @@
+{
+  "user": [
+    {
+      "userId": 12,
+      "name": "sarvesh",
+      "email": "sarvesh@test.com",
+      "mobile": "111111111",
+      "address": "Nadiyad",
+      "id": 12
+    },
+    {
+      "name": "vinay",
+      "email": "vinay@test.com",
+      "mobile": "9136998508",
+      "address": "Manmohan park",
+      "id": 13
+    },
+    {
+      "userId": 14,
+      "name": "vivek",
+      "email": "vivek@test.com",
+      "mobile": "266969789",
+      "address": "Ahmedabad",
+      "id": 14
+    },
+    {
+      "userId": 15,
+      "name": "vicky",
+      "email": "vicky@test.com",
+      "mobile": "569785648",
+      "address": "mumbai",
+      "id": 15
+    },
+    {
+      "userId": 16,
+      "name": "AlokKumar",
+      "email": "alok@kumar.com",
+      "mobile": "54976789",
+      "address": "Village",
+      "id": 16
+    }
+  ]
+}

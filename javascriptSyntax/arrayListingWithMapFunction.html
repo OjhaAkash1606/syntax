@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array listing with map function</title>
+  </head>
+  <body>
+    <script>
+      /* // Array listing with map function
+            let names = ["pankaj", "sunil", "rahul", "chintu", "pintu", "dinesh"];
+            let nick = names.map((name) => {
+              document.write(`Your name is : ${name} ` + "<br>");
+              console.log(name);
+              return name;
+            });
+            document.write(nick);
+            console.log(nick);
+
+            // Nested array listing with map function
+
+            let nestedArray = [
+              "Saloni",
+              "Shilpa",
+              ["Akash", "Pankaj", ["Rishi", "Shailendra"], "Anil", "Sunil"],
+              "Simran",
+              "Priya",
+              "Pooja",
+            ];
+            nestedArray = nestedArray.flat(2);
+            console.log(nestedArray);
+            nestedArray.map((nested) =>
+              document.write(`Your name is : ${nested}` + "<br>")
+            );
+
+            // Array of object listing with map function
+
+            let arrayObjects = [
+              "Aadarsh",
+              "Chintu",
+              "Pinku",
+              { designation: "Job", age: 29, color: "Black" },
+            ];
+
+            arrayObjects.map((item, i) => {
+        
+
+        if (item.designation) {
+          console.log(item.designation);
+        }
+        if (item.age) {
+          console.log(item.age);
+        }
+        if (item.color) {
+          console.log(item.color);
+        } else {
+          console.log(item);
+        }
+      });
+      
+            // Nested array of object listing with map function
+            let nestedArrayObjects = [
+              {
+                name: "Pankaj",
+                age: 28,
+                occupation: "Job",
+                address: [{ hn: 329, place: "Delhi", pin: 380000 }],
+              },
+              {
+                name: "Pankaj",
+                age: 28,
+                occupation: "Job",
+                address: [{ hn: 329, place: "Delhi", pin: 380000 }],
+              },
+              {
+                name: "Pankaj",
+                age: 28,
+                occupation: "Job",
+                address: [{ hn: 329, place: "Delhi", pin: 380000 }],
+              },
+            ];
+
+            nestedArrayObjects.map((val) => {
+              let [Name, Age, Occupation, Address] = [
+                val.name,
+                val.age,
+                val.occupation,
+                val.address.map((item) => {
+                  let [Hn, Place, Pin] = [item.hn, item.place, item.pin];
+                  document.write(
+                    Hn + " " + " ",
+                    Place + " " + " ",
+                    Pin + " " + " <br>"
+                  );
+                }),
+              ];
+
+              document.write(
+                Name + " " + " ",
+                Age + " " + " ",
+                Occupation + " " + " <br>"
+              );
+            }); */
+      let nestedArrayObjects = [
+        {
+          name: "Pankaj",
+          age: 28,
+          occupation: "Job",
+          address: [{ hn: 329, place: "Delhi", pin: 380000 }],
+        },
+        {
+          name: "Anil",
+          age: 28,
+          occupation: "Job",
+          address: [{ hn: 329, place: "Delhi", pin: 380000 }],
+        },
+        {
+          name: "Ritu",
+          age: 28,
+          occupation: "Job",
+          address: [{ hn: 329, place: "Delhi", pin: 380000 }],
+        },
+      ];
+
+      nestedArrayObjects.map((val) => {
+        /*  let [Name, Age, Occupation, Address] = [
+                val.name,
+                val.age,
+                val.occupation, */
+        /* val.address.map((item) => {
+                  let [Hn, Place, Pin] = [item.hn, item.place, item.pin];
+                  document.write(
+                    Hn + " " + " ",
+                    Place + " " + " ",
+                    Pin + " " + " <br>"
+                  );
+                }),
+              ]; */
+
+        console.log(
+          val.name + " " + " ",
+          val.age + " " + " ",
+          val.occupation + " " + " ",
+          val.address.hn
+        );
+      });
+    </script>
+  </body>
+</html>
